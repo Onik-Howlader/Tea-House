@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- css responsive link -->
+     <link rel="stylesheet" href="responsive.css">
     <!-- google font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +25,8 @@
         @theme {
             --color-clifford: #da373d;
             --color-primary-text1: #777777;
+            --color-gradient-start: #FF8938;
+            --color-gradient-end: #F00;
           }
         </style>
 
@@ -35,7 +39,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto border">
+    <header class="container mx-auto">
         <div class="hero">
             <div class="hero-content flex-col lg:flex-row">
                 <div>
@@ -61,7 +65,7 @@
         </div>
     </header>
 
-    <main class="container mx-auto border">
+    <main class="container mx-auto">
         <!--Featured Products section-1 -->
         <section class="my-24 text-center px-2">
             <h3 class="font-extrabold text-4xl md:text-5xl lg:text-5xl mb-10">Our Featured Products</h3>
@@ -156,13 +160,13 @@
 
         <!-- Meet Our Clients -->
         <section class="my-24 px-2">
-            <div class="flex flex-col lg:flex-row px-8 py-7 lg:px-16 lg:py-24 lg:gap-75 items-center bg-gradient-to-r from-[#ff8938] to-[#f00] rounded-xl">
+            <div class="flex flex-col lg:flex-row px-8 py-7 lg:px-16 lg:py-24 lg:gap-75 items-center bg-gradient-to-r from-[#ff8938] to-[#f00] rounded-xl client-responsive">
                 <div class="space-y-7">
                     <h3 class="text-5xl font-extrabold text-white">Meet Our Super
                         <br>
                         Clients
                     </h3>
-                    <p class="font-medium text-white lg:w-[550px]">There are many variations of passages of Lorem Ipsum
+                    <p class="font-medium text-white lg:w-[550px] client-description">There are many variations of passages of Lorem Ipsum
                         available, but the
                         majority have suffered alteration in some form,
                         by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -211,11 +215,147 @@
 </div>
             </div>
         </section>
+
+        <!-- News & Events Section -->
+         <section class="my-24 px-2">
+            <div class="text-cetner">
+                <h2 class="text-4xl font-extrabold text-center">News & Events</h2>
+                <p class="font-medium text-center mt-5 text-primary-text1">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br>
+                by injected humour, or randomised words which don't look even slightly believable.</p>
+                <!-- news & events card -->
+                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-8">
+                    <!-- news & events card-1 -->
+<div class="card bg-base-100  drop-shadow-lg border-2 border-gray-200">
+    <figure class="px-10 pt-10">
+        <img src="./images/news-1.png"
+            class="rounded-xl" />
+    </figure>
+    <div class="card-body px-10">
+        <p class="text-primary-text1">Feb 05, 2027</p>
+        <h2 class="card-title">Collecting 8 points for discount</h2>
+        <p class="text-primary-text1">There are many variations of passages of Lorem Ipsum available.</p>
+                    <div class="bg-gray-200 w-[150px] rounded-lg">
+                        <button
+                            class="btn border-none bg-gradient-to-l from-[#e2c107] to-[#ec1717] bg-clip-text text-transparent font-extrabold w-[150px] text-xl">Learn More</button>
+                    </div>
+    </div>
+</div>
+                    <!-- news & events card-2 -->
+<div class="card bg-base-100 drop-shadow-lg  border-2 border-gray-200">
+    <figure class="px-10 pt-10">
+        <img src="./images/news-2.png"
+            class="rounded-xl" />
+    </figure>
+    <div class="card-body px-10">
+        <p class="text-primary-text1">Feb 05, 2027</p>
+        <h2 class="card-title">Collecting 8 points for discount</h2>
+        <p class="text-primary-text1">There are many variations of passages of Lorem Ipsum available.</p>
+                    <div class="bg-gray-200 w-[150px] rounded-lg">
+                        <button
+                            class="btn border-none bg-gradient-to-l from-[#e2c107] to-[#ec1717] bg-clip-text text-transparent font-extrabold w-[150px] text-xl">Learn More</button>
+                    </div>
+    </div>
+</div>
+                    <!-- news & events card-3 -->
+<div class="card bg-base-100 drop-shadow-lg  border-2 border-gray-200">
+    <figure class="px-10 pt-10">
+        <img src="./images/news-3.png"
+            class="rounded-xl" />
+    </figure>
+    <div class="card-body px-10">
+        <p class="text-primary-text1">Feb 05, 2027</p>
+        <h2 class="card-title">Collecting 8 points for discount</h2>
+        <p class="text-primary-text1">There are many variations of passages of Lorem Ipsum available.</p>
+                    <div class="bg-gray-200 w-[150px] rounded-lg">
+                        <button
+                            class="btn border-none bg-gradient-to-l from-[#e2c107] to-[#ec1717] bg-clip-text text-transparent font-extrabold w-[150px] text-xl">Learn More</button>
+                    </div>
+    </div>
+</div>
+                    <!-- news & events card-4 -->
+<div class="card bg-base-100 drop-shadow-lg  border-2 border-gray-200">
+    <figure class="px-10 pt-10">
+        <img src="./images/news-1.png"
+            class="rounded-xl" />
+    </figure>
+    <div class="card-body px-10">
+        <p class="text-primary-text1">Feb 05, 2027</p>
+        <h2 class="card-title">Collecting 8 points for discount</h2>
+        <p class="text-primary-text1">There are many variations of passages of Lorem Ipsum available.</p>
+                    <div class="bg-gray-200 w-[150px] rounded-lg">
+                        <button
+                            class="btn border-none bg-gradient-to-l from-[#e2c107] to-[#ec1717] bg-clip-text text-transparent font-extrabold w-[150px] text-xl">Learn More</button>
+                    </div>
+    </div>
+</div>
+                </div>
+            </div>
+         </section>
     </main>
 
-    <footer>
+<footer class="p-10 bg-base-200 bg-gradient-to-l from-[#ff0000]/10 to-[#ff8938]/10
+">
+    <div class="flex lg:justify-around gap-10 lg:gap-10 get-started">
+        <img src="./images/cup.png" alt="" class="lg:-ml-70">
+        <div class="flex flex-col lg:flex-row gap-3 items-center lg:-mr-50">
+            <p>Ready to get strated?</p>
+                                <div class="w-[150px] rounded-lg">
+                                    <button
+                                        class="btn border-none
+                                        bg-gradient-to-r from-gradient-start to-gradient-end 
+                                        font-extrabold w-[140px] text-white">Get Started</button>
+                                </div>
+        </div>
+    </div>
+ <div class="footer sm:footer-horizontal lg:gap-70 justify-center my-10 footer-content">
+    <nav class="mx-auto">
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav class="mx-auto">
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav class="mx-auto">
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+    </nav>
+    <form class=" text-center">
+        <h6 class="text-xl font-bold mx-auto">Subscribe to our <br>Newsletter</h6>
+        <fieldset class="lg:w-80 mt-2 items-center
+        subscribe-btn">
+            <label class="text-primary-text1">Enter your email address</label>
+            <div class="join">
+                <input type="text" placeholder="username@site.com" class="join-item focus:outline-none border-t-0 border-l-0 border-r-0 border-b-2 bg-transparent left-5"/>
+                            <button
+                                class="btn btn-primary join-item rounded-full p-3 bg-gradient-to-r from-gradient-start to-gradient-end border-none"><i
+                                    class="fa-solid fa-angle-right"></i></button>
+            </div>
 
-    </footer>
+        </fieldset>
+    </form>
+ </div>
+<div>
+            <aside class="grid-flow-col items-center text-center">
+                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+            </aside>
+            <nav class="flex gap-8 justify-center mt-5 text-3xl">
+                <a href="https://www.facebook.com/onikhowladercse" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://github.com/Onik-Howlader" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/onik-howlader-cse06/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </nav>
+</div>
+</footer>
 </body>
 
 </html>
